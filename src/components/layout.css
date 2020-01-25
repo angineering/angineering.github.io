@@ -211,7 +211,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #2A2A2A;
   font-family: Roboto, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -222,14 +222,13 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 section {
-  padding: 80px 20px 20px 20px;
+  padding: 80px 20px 60px 20px;
 }
 section:nth-child(odd) {
   background-color: #F9E4F0;
 }
-article {
+.sub-section {
   margin-bottom: 60px;
-  margin-top: 40px;
 }
 img {
   max-width: 100%;
@@ -652,6 +651,11 @@ nav a, nav a:visited {
   color: white
 }
 
+img.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -660,15 +664,28 @@ nav a, nav a:visited {
 
 @media only screen and (min-width: 480px) {
   img {
-    max-width: 40%;
+    max-width: 45%;
+    max-height: 500px;
     margin: 5px 20px;
+  }
+  img.full-width {
+    max-width: 100%;
+    margin: 0 auto;
   }
   section {
     margin: 0 auto;
-    padding: 120px 120px 60px;
+    padding: 120px 120px 80px;
   }
   article {
     display: flex;
+    justify-content: space-between;
+  }
+  article div {
+    max-width: 550px;
+    margin-right: 10px;
+  }
+  .sub-section {
+    margin-bottom: 80px;
   }
 }
 

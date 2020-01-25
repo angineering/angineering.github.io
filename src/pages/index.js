@@ -5,18 +5,19 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Section from "../components/section"
+import Article from "../components/article"
+
 import Portrait from "../images/angelabranaes.jpg"
-import GruppebildeTENK from "../images/GruppebildeTENK.jpg"
-import AdaCafeApp from "../images/AdaCafeApp.png"
 import Proximistyle from "../images/Proximistyle.png"
 import BLShoes from "../images/BLShoes.jpg"
 import Hero from '../images/Hero.jpg'
 import NORA from '../images/NORA.jpg'
+import GruppebildeTENK from '../images/GruppebildeTENK.jpg'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Angela Branaes" />
-
     <div style={{
       backgroundColor: '#F9E4F0',
       height: '105vh',
@@ -49,8 +50,8 @@ const IndexPage = () => (
         <a style={{ color: 'white' }} href='#Introduction'><FontAwesomeIcon icon={faCaretDown} size='3x'/></a>
       </div>
     </div>
-    <section id="Introduction">
-      <article>
+    <Section sectionId="Introduction">
+      <Article>
         <img src={Portrait} alt="Angela Branaes"/>
         <div>
           <summary>
@@ -73,11 +74,11 @@ const IndexPage = () => (
             <a href='https://medium.com/@angelabranaes' target='_blank'><FontAwesomeIcon icon={faMedium} size='2x'/></a>
           </div>
         </div>
-      </article>
-    </section>
-    <section id='Product'>
+      </Article>
+    </Section>
+    <Section sectionId='Product'>
       <h2>Product</h2>
-      <article>
+      <Article className='sub-section'>
         <div>
           <h4>Proximistyle</h4>
           <p>
@@ -102,8 +103,8 @@ const IndexPage = () => (
           </ul>
         </div>
         <img src={Proximistyle} alt='The Proximistyle app' />
-      </article>
-      <article>
+      </Article>
+      <Article>
         <div>
           <h4>Baudoin & Lange (2019)</h4>
           <p>
@@ -124,9 +125,9 @@ const IndexPage = () => (
           </ul>
         </div>
         <img src={BLShoes} alt='B&L Loafers' />
-      </article>
-    </section>
-    <section id='Teaching'>
+      </Article>
+    </Section>
+    <Section sectionId='Teaching'>
       <h2>Teaching</h2>
       <p>
         <mark>My passion is turning product ideas into reality. </mark>
@@ -134,68 +135,71 @@ const IndexPage = () => (
         Because <mark>I am able to easily explain complex tech concepts to non-technical people</mark>, I love inspiring beginners
         to try coding.
       </p>
-      <h3>Conferences</h3>
-      <article>
-        <div>
-          <h4>PyConLT (Lithuania, 2018)</h4>
-          <p>
-            "Building a Startup with Python, React and AWS".
-          </p>
-        </div>
-        <div>
-          <h4>EuroPython (Italy, 2017)</h4>
-          <p>
-            <a href='https://www.youtube.com/watch?v=nfi0hX-F8Zo' target='_blank'>"Building a full-stack web application with Python, NPM, Webpack and React".</a>
-          </p>
-        </div>
-        <div>
-          <h4>Python + Finance (London, 2016)</h4>
-          <p>
-            "Python + AHL".
-          </p>
-        </div>
-      </article>
-      <h3>Workshops</h3>
-      <article>
-        <div>
-          <h4>TENK Tech Camp for girls (Oslo, 2019)</h4>
-          <p>Taught two days of workshops for 12-18 year-old girls on how to build their very first app in React Native.</p>
-        </div>
-        <img src={GruppebildeTENK} alt='Group photo TENK Tech Camp 2019' />
-      </article>
-      <article>
-        <div>
-          <h4>Flatiron School</h4>
-          <p>
-          One of the highlights was
-          the <a href='https://medium.com/@angelabranaes/ada-lovelace-day-workshop-part-2-creating-the-ada-caf%C3%A9-app-292800cca5f0' target='_blank'>Ada Lovelace Day workshop</a> I did, 
-          where we had to double the amount of desks in the room, and
-          there <a href='https://twitter.com/angiebranaes/status/1049705820437536769' target='_blank'>still wasn't room</a> for
-          everyone who showed up.
-          </p>
-        </div>
-        <img src={AdaCafeApp} alt='Ada Cafe App' />
-      </article>
-      <h3>Teaching and Tutoring</h3>
-      <article>
-        <div>
-          <h4>Flatiron School (2018-2019)</h4>
-          <p>
-            I was the <mark>Lead Front End Web Development Instructor</mark> for the London evening classes, teaching web development fundamentals to complete beginners.
-            <mark>My classes had an NPS score of 10.</mark>
-          </p>
-        </div>
-        <div>
-          <h4>Bonas McFarlane</h4>
-          <p>
-            Tutored teenagers in basic and intermediate programming concepts, including Python, websites and computer science fundamentals.
-          </p>
-        </div>
-      </article>
-    </section>
-    <section id='Community'>
+      <div className='sub-section'>
+        <h3>Conferences</h3>
+        <Article>
+          <div>
+            <h4>PyConLT (Lithuania, 2018)</h4>
+            <p>
+              "Building a Startup with Python, React and AWS".
+            </p>
+          </div>
+          <div>
+            <h4>EuroPython (Italy, 2017)</h4>
+            <p>
+              <a href='https://www.youtube.com/watch?v=nfi0hX-F8Zo' target='_blank'>"Building a full-stack web application with Python, NPM, Webpack and React".</a>
+            </p>
+          </div>
+          <div>
+            <h4>Python + Finance (London, 2016)</h4>
+            <p>
+              "Python + AHL".
+            </p>
+          </div>
+        </Article>
+      </div>
+      <div className='sub-section'>
+        <h3>Workshops</h3>
+        <Article>
+          <div>
+            <h4>Flatiron School</h4>
+            <p>
+            One of the highlights was
+            the <a href='https://medium.com/@angelabranaes/ada-lovelace-day-workshop-part-2-creating-the-ada-caf%C3%A9-app-292800cca5f0' target='_blank'>Ada Lovelace Day workshop</a> I did, 
+            where we had to double the amount of desks in the room, and
+            there <a href='https://twitter.com/angiebranaes/status/1049705820437536769' target='_blank'>still wasn't room</a> for
+            everyone who showed up.
+            </p>
+          </div>
+          <div>
+            <h4>TENK Tech Camp for girls (Oslo, 2019)</h4>
+            <p>Taught two days of workshops for 12-18 year-old girls on how to build their very first app in React Native.</p>
+          </div>
+        </Article>
+        <img src={GruppebildeTENK} alt='TENK tech camp group photo' className='full-width' />
+      </div>
+      <div className='sub-section'>
+        <h3>Teaching and Tutoring</h3>
+        <Article>
+          <div>
+            <h4>Flatiron School (2018-2019)</h4>
+            <p>
+              I was the <mark>Lead Front End Web Development Instructor</mark> for the London evening classes, teaching web development fundamentals to complete beginners.
+              <mark>My classes had an NPS score of 10.</mark>
+            </p>
+          </div>
+          <div>
+            <h4>Bonas McFarlane</h4>
+            <p>
+              Tutored teenagers in basic and intermediate programming concepts, including Python, websites and computer science fundamentals.
+            </p>
+          </div>
+        </Article>
+      </div>
+    </Section>
+    <Section sectionId='Community'>
       <h2>Community</h2>
-      <article>
+      <Article>
         <div>
           <h4>Nora i London, Board Member (2018 - 2020)</h4>
           <p>
@@ -208,8 +212,8 @@ const IndexPage = () => (
           </p>
         </div>
         <img src={NORA} alt='NORA Pictures from 2019' />
-      </article>
-    </section>
+      </Article>
+    </Section>
   </Layout>
 )
 
