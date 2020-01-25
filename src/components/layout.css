@@ -158,6 +158,7 @@ fieldset {
 }
 footer {
   padding: 10px 20px;
+  font-size: 12px;
 }
 legend {
   box-sizing: border-box;
@@ -654,6 +655,20 @@ nav a, nav a:visited {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  img {
+    max-width: 40%;
+    margin: 5px 20px;
+  }
+  section {
+    margin: 0 auto;
+    padding: 120px 120px 60px;
+  }
+  article {
+    display: flex;
   }
 }
 
