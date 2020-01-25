@@ -44,6 +44,7 @@ template {
 a {
   color: #2A2A2A;
   background-color: transparent;
+  font-weight: bold;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -220,10 +221,14 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 section {
-  padding: 80px 20px;
+  padding: 80px 20px 20px 20px;
 }
 section:nth-child(odd) {
   background-color: #F9E4F0;
+}
+article {
+  margin-bottom: 60px;
+  margin-top: 40px;
 }
 img {
   max-width: 100%;
@@ -640,6 +645,10 @@ pre tt:after {
 
 #intro p {
   font-style: italic;
+}
+
+nav a, nav a:visited {
+  color: white
 }
 
 @media only screen and (max-width: 480px) {

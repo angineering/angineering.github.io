@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link, withAssetPrefix } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { faFileExcel } from "@fortawesome/free-solid-svg-icons"
@@ -10,13 +10,13 @@ const Header = ({ siteTitle }) => (
       paddingTop: '20px'
     }}
   >
-    <div
+    <nav
       style={{
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
       }}
     >
       <h4>
@@ -49,7 +49,7 @@ const Header = ({ siteTitle }) => (
           Community
         </Link>
       </h4>
-    </div>
+    </nav>
   </header>
 )
 
