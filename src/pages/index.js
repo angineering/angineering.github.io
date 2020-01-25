@@ -9,6 +9,7 @@ import Portrait from "../images/angelabranaes.jpg"
 import GruppebildeTENK from "../images/GruppebildeTENK.jpg"
 import AdaCafeApp from "../images/AdaCafeApp.png"
 import Proximistyle from "../images/Proximistyle.png"
+import BLShoes from "../images/BLShoes.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +17,7 @@ const IndexPage = () => (
 
     <div style={{
       backgroundColor: '#F9E4F0',
-      height: '100vh',
+      height: '90vh',
       width: '100vw'
     }}>
       <div style={{
@@ -46,7 +47,9 @@ const IndexPage = () => (
     <section id="Introduction">
       <img src={Portrait} alt="Angela Branaes"/>
       <p>
-        Founder and product manager with a passion for creating the future, and working in the intersection between technology and people.
+        Founder, product manager and speaker that's busy creating the future.
+        I make products that delight, save you time and automate repetitive tasks.
+        Passionate about design, technology and innovation.
       </p>
       <p>
         BEng in Computing from Imperial College London. <a href='https://wearetechwomen.com/angela-branaes-proximistyle/' target='_blank'>TechWomen100</a>.
@@ -67,33 +70,39 @@ const IndexPage = () => (
       <p>
       For any outfit, <a href='https://proximistyle.com/' target='_blank'>Proximistyle</a> lets you see which stores have it in stock, in your size nearby.
       </p>
+      <ul>
+        <li>
+          <mark>Created and launched iPhone and web app.</mark> Created everything, from design of logo and collateral to UX, UI, backend, AWS and App store launch.
+        </li>
+        <li>
+          <mark>Built over 100 partnerships</mark> with leading brands including Harvey Nichols, Michael Kors and Coach.
+        </li>
+        <li>
+          <mark>Won the YC Startup School 2018 Grant</mark> (Top 1% of startups picked). Interviewed with YC in the Bay Area.
+        </li>
+        <li>
+          Part of the CFE startup programme 2019, <mark>sponsored by The London College of Fashion and the EU Regional Development Fund.</mark>
+        </li>
+      </ul>
+      <img src={Proximistyle} alt='The Proximistyle app' />
+      <h4>Baudoin & Lange (2019)</h4>
       <p>
-- Built 100+ partnerships with leading brands including Harvey Nichols, Michael Kors and Coach.
-- Created and launched iPhone app and web app. Built out the full product myself, from design of logo and collateral to UX, UI, backend, AWS and App store launch.
-- Ran 20+ IDEO style user interviews and design sprints with kanbans to drive product roadmap and market positioning. Used Sketch, InVision and Expo to rapid prototype.
-
-Part of the CFE startup programme winter 2019, sponsored by The London College of Fashion and the EU Regional Development Fund.
-
-Did YC Startup School 2018 and won the $10,000 equity free grant (Top 1% of startups picked). Interviewed with YC in the Bay Area.
-      </p>
-      <img src={Proximistyle} alt="The Proximistyle app" />
-      <h4>Baudoin & Lange</h4>
-      <p>
-        I was brought in as <mark>Head of Technology and Operations</mark> to digitise the business and unlock growth.
+        London based luxury footwear brand. I was brought in as interim <mark>Head of Technology and Operations</mark> to digitise the business and unlock growth.
       </p>
       <ul>
       <li>
-        Migrated e-commerce from Squarespace to Shopify. Shopify enabled the brand to get a clear overview of orders, product catalogue and inventory. 
+        Migrated e-commerce from Squarespace to Shopify.
       </li>
       <li>
-        <mark>Saved staff 13h/week</mark> (5 min/lookup) by codifying products and digitising inventory. This also enabled customers to see if a product was in stock when placing an order, reducing the time needed to manage their expectations.
+        <mark>Saved staff 13h/week</mark> (5 min/lookup) by codifying products and digitising inventory. Enabled customers to see if a product was in stock.
       </li>
       <li>
         Launched product labelling initiative after identifying that ambiguity was causing errors.
         <mark>Reduced the factory error rate from 10% to almost 0. </mark>
-        This <mark>saved staff 2 h/week</mark> (1 min/item) by reducing stock processing time.
+        This <mark>saved staff 2 h/week</mark>.
       </li>
       </ul>
+      <img src={BLShoes} alt='B&L Loafers' />
     </section>
     <section id='Teaching'>
       <h2>Teaching</h2>
@@ -131,10 +140,14 @@ Did YC Startup School 2018 and won the $10,000 equity free grant (Top 1% of star
       <img src={AdaCafeApp} alt='Ada Cafe App' />
 
       <h3>Teaching and Tutoring</h3>
-      <h4>Flatiron School</h4>
+      <h4>Flatiron School (2018-2019)</h4>
       <p>
-        I was the Lead Front End Web Development Instructor for the evening classes, teaching web development fundamentals to complete beginners.
-        My classes had an NPS score of 10.
+        Flatiron School is a WeWork owned coding bootcamp that helps students transform their career.
+        Karlie Kloss famously did the web develpment evening class in New York before starting her coding initiative Kode With Klossy.
+      </p>
+      <p>
+        I was the <mark>Lead Front End Web Development Instructor</mark> for the London evening classes, teaching web development fundamentals to complete beginners.
+        <mark>My classes had an NPS score of 10.</mark>
       </p>
       <p>
       Over 10 weeks of twice weekly evening classes students went from not knowing what HTML is to building their first brochure website using HTML, CSS, JavaScript and Git.
@@ -159,7 +172,7 @@ Did YC Startup School 2018 and won the $10,000 equity free grant (Top 1% of star
       <p>
         As a board member I got the amazing opportunity to organise events and grow our community.
         A highlight of 2019 was organising a panel event at The Conduit on entrepreneurship,
-        where the panelists were the head of Innovation Norway London and two female founders from our group.
+        where the panelists were the Head of Innovation Norway London and two female founders from our group.
       </p>
     </section>
   </Layout>
