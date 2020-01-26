@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import AOS from 'aos'
-// import 'aos/dist/aos.css';
+import 'aos/dist/aos.css';
 
 import Header from "./header"
 import "./layout.css"
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <script>AOS.init()</script> */}
+      <script>{AOS.init({ duration: 1500 })}</script>
       <Header />
       <div
         style={{

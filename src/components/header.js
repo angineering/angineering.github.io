@@ -1,8 +1,6 @@
-import { withAssetPrefix } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Link } from 'react-scroll'
-import { faFileExcel } from "@fortawesome/free-solid-svg-icons"
 
 const Header = ({ siteTitle }) => (
   <header
