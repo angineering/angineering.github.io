@@ -1,7 +1,7 @@
 {
   "name": "angelabranaes",
   "private": false,
-  "description": "The home page of Angela Branaes",
+  "description": "The homepage of Angela Branaes. Learn about the founder, product manager and speaker.",
   "version": "1.0.0",
   "author": "Angela Branaes",
   "dependencies": {
@@ -35,7 +35,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && master -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
