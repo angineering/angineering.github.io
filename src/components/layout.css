@@ -1,4 +1,6 @@
 /* Pink: #F9E4F0 */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -213,7 +215,7 @@ html {
 }
 body {
   color: #2A2A2A;
-  font-family: Roboto, serif;
+  font-family: Roboto, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
