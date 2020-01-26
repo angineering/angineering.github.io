@@ -7,42 +7,36 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <script>{AOS.init({ duration: 1500 })}</script>
-      <Header />
-      <div
-        style={{
-          //maxWidth: 960,
-          //padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()} Angela K J Branaes
-        </footer>
-      </div>
-    </>
-  )
+class Layout extends React.Component {
+  componentDidMount() {
+    AOS.init({ duration: 1500 })
+  }
+  render() {
+    return (
+      <>
+        <Header />
+        <div
+          style={{
+            //maxWidth: 960,
+            //padding: `0 1.0875rem 1.45rem`,
+          }}
+        >
+          <main>{this.props.children}</main>
+          <footer>
+            © {new Date().getFullYear()} Angela K J Branaes
+          </footer>
+        </div>
+      </>
+    )
+  }
 }
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
