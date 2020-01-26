@@ -1,6 +1,7 @@
-import { Link, withAssetPrefix } from "gatsby"
+import { withAssetPrefix } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from 'react-scroll'
 import { faFileExcel } from "@fortawesome/free-solid-svg-icons"
 
 const Header = ({ siteTitle }) => (
@@ -21,7 +22,9 @@ const Header = ({ siteTitle }) => (
     >
       <h4>
         <Link
-          to="#Product"
+          to="Product"
+          smooth={true}
+          isDynamic={true}
           style={{
             textDecoration: `none`,
           }}
@@ -31,7 +34,9 @@ const Header = ({ siteTitle }) => (
       </h4>
       <h4>
         <Link
-          to="#Teaching"
+          to="Teaching"
+          smooth={true}
+          isDynamic={true}
           style={{
             textDecoration: `none`,
           }}
@@ -41,7 +46,9 @@ const Header = ({ siteTitle }) => (
       </h4>
       <h4>
         <Link
-          to="#Community"
+          to="Community"
+          smooth={true}
+          isDynamic={true}
           style={{
             textDecoration: `none`,
           }}

@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMedium, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
-
+import { Link } from 'react-scroll'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/section"
@@ -47,7 +47,14 @@ const IndexPage = () => (
         bottom: '0',
         textAlign: 'center',
       }}>
-        <a style={{ color: 'white' }} href='#Introduction'><FontAwesomeIcon icon={faCaretDown} size='3x'/></a>
+        <Link
+          to='Introduction'
+          style={{ color: 'white' }}
+          smooth={true}
+          isDynamic={true}
+        >
+          <FontAwesomeIcon icon={faCaretDown} size='3x'/>
+          </Link>
       </div>
     </div>
     <Section sectionId="Introduction">
